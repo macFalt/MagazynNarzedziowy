@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Magazyn narzedziowy/1.0.0": {
+        "dependencies": {
+          "MagazynNarzedziowy.App": "1.0.0"
+        },
+        "runtime": {
+          "Magazyn narzedziowy.dll": {}
+        }
+      },
+      "MagazynNarzedziowy.App/1.0.0": {
+        "dependencies": {
+          "MagazynNarzedziowy.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MagazynNarzedziowy.App.dll": {}
+        }
+      },
+      "MagazynNarzedziowy.Domain/1.0.0": {
+        "runtime": {
+          "MagazynNarzedziowy.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Magazyn narzedziowy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MagazynNarzedziowy.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MagazynNarzedziowy.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

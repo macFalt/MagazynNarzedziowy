@@ -1,0 +1,26 @@
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.csproj.AssemblyReference.cache
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.AssemblyInfoInputs.cache
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.AssemblyInfo.cs
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.csproj.CoreCompileInputs.cache
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.App.deps.json
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.App.dll
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.App.pdb
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.Domain.dll
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.Domain.pdb
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.csproj.CopyComplete
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.dll
+C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.pdb
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.App.deps.json
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.App.dll
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.App.pdb
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.Domain.dll
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/bin/Debug/netcoreapp3.1/MagazynNarzedziowy.Domain.pdb
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.csproj.AssemblyReference.cache
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.AssemblyInfoInputs.cache
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.AssemblyInfo.cs
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.csproj.CoreCompileInputs.cache
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.csproj.CopyComplete
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.dll
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/Debug/netcoreapp3.1/MagazynNarzedziowy.App.pdb

@@ -1,0 +1,100 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "MagazynNarzedziowy.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MagazynNarzedziowy.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MagazynNarzedziowy.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MagazynNarzedziowy.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MagazynNarzedziowy.Domain/MagazynNarzedziowy.Domain.csproj",
+      "msbuildProject": "../MagazynNarzedziowy.Domain/MagazynNarzedziowy.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "MagazynNarzedziowy.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/maciejfaltynski/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/MagazynNarzedziowy.App.csproj",
+      "projectName": "MagazynNarzedziowy.App",
+      "projectPath": "/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/MagazynNarzedziowy.App.csproj",
+      "packagesPath": "/Users/maciejfaltynski/.nuget/packages/",
+      "outputPath": "/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.App/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/maciejfaltynski/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.Domain/MagazynNarzedziowy.Domain.csproj": {
+              "projectPath": "/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.Domain/MagazynNarzedziowy.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WgAxx4ITDE6xgF4VIPmPdjsBk1N0tV0omTA4Y1yMw9Vym+r5g8rQ0sq4uh4EKs3BdgJx8+/s8gYIW2J0Kbn9sg==",
+  "success": true,
+  "projectFilePath": "/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/MagazynNarzedziowy.Domain/MagazynNarzedziowy.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/maciejfaltynski/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/maciejfaltynski/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
