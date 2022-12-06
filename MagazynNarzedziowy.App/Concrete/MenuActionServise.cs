@@ -31,14 +31,14 @@ namespace MagazynNarzedziowy.App.Concrete
 
         private  void Initialize()
         {
-            AddTools(new MenuAction(1, "Dodaj narzedzie", "Main"));
-            AddTools(new MenuAction(2, "Usuń narzedzie", "Main"));
-            AddTools(new MenuAction(3, "Pokaż szczegóły po id", "Main"));
-            AddTools(new MenuAction(4, "Lista narzedzi", "Main"));
+            AddObject(new MenuAction(1, "Dodaj narzedzie", "Main"));
+            AddObject(new MenuAction(2, "Usuń narzedzie", "Main"));
+            AddObject(new MenuAction(3, "Pokaż szczegóły po id", "Main"));
+            AddObject(new MenuAction(4, "Lista narzedzi", "Main"));
 
-            AddTools(new MenuAction(1, "Wiertła", "RodzajNarzedzi"));
-            AddTools(new MenuAction(2, "Frezy", "RodzajNarzedzi"));
-            AddTools(new MenuAction(3, "Głowice", "RodzajNarzedzi"));
+            AddObject(new MenuAction(1, "Wiertła", "RodzajNarzedzi"));
+            AddObject(new MenuAction(2, "Frezy", "RodzajNarzedzi"));
+            AddObject(new MenuAction(3, "Głowice", "RodzajNarzedzi"));
 
      
 

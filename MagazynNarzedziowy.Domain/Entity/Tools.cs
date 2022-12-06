@@ -14,13 +14,13 @@ namespace MagazynNarzedziowy.Domain.Entity
 
         public Tools()
         {
-
+            ;
         }
         public Tools(int id,string name, int typeId)
         {
             Name = name;
             TypeId = typeId;
-            //Id = id;
+            Id = id;
         }
     }
 }

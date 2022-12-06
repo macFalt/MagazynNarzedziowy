@@ -24,6 +24,7 @@ namespace Magazyn_narzedziowy
                     Console.WriteLine($"{mainMenu[i].Id}.{mainMenu[i].Name}");
 
                 var operation = Console.ReadKey();
+                Console.WriteLine("");
 
                 switch (operation.KeyChar)
                 {
@@ -31,20 +32,23 @@ namespace Magazyn_narzedziowy
                         var newId = toolManager.AddNewTool();
                         break;
 
-                    //case '2':
-                    //    var removeId = toolManager.RemoveItemView();
-                    //    toolManager.RemoveItem(removeId);
-
-                    //    break;
+                    case '2':
+                        var removeId = toolManager.RemoveTool();
+                        break;
 
                     //case '3':
                     //    var showDetails = toolManager.ShowDetailsView();
                     //    toolManager.ShowDetails(showDetails);
                     //    break;
 
-                    //case '4':
-                    //    toolService.showAllToolsView();
-                    //    break;
+                    case '4':
+                        List<Tools> xxx = new List<Tools>();
+
+                        xxx = toolManager.ShowToolList();
+                        for (int i = 0; i < xxx.Count; i++)
+                            Console.WriteLine($"{xxx[i].Id}.{xxx[i].Name}");
+
+                        break;
 
 
                     default:

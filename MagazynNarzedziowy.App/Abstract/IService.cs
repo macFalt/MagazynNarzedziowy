@@ -8,13 +8,13 @@ namespace MagazynNarzedziowy.App.Abstract
     {
         List<T> Tools { get; set; }
 
-        List<T> GetAllTools();
+        List<T> GetAllObject();
 
-        int AddTools(T tool);
+        int AddObject(T tool);
 
-        int UpdateTool(T tool);
+        int UpdateObject(T tool);
 
-        void RemoveTool(T tool);
+        void RemoveObject(T tool);
 
 
     }

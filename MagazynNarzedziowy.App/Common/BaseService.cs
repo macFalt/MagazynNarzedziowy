@@ -33,24 +33,24 @@ namespace MagazynNarzedziowy.App.Common
         }
 
 
-        public int AddTools(T tool)
+        public int AddObject(T tool)
         {
             Tools.Add(tool);
             return tool.Id;
 
         }
 
-        public List<T> GetAllTools()
+        public List<T> GetAllObject()
         {
             return Tools;
         }
 
-        public void RemoveTool(T tool)
+        public void RemoveObject(T tool)
         {
             Tools.Remove(tool);
         }
 
-        public int UpdateTool(T tool)
+        public int UpdateObject(T tool)
         {
             var entity = Tools.FirstOrDefault(p => p.Id == tool.Id); 
             if(entity!=null)
@@ -60,7 +60,7 @@ namespace MagazynNarzedziowy.App.Common
             return entity.Id;
         }
 
-        public T GetItemById(int id)
+        public T GetObjectById(int id)
         {
             var entity = Tools.FirstOrDefault(p => p.Id == id);
             return entity;
