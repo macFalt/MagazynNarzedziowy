@@ -37,10 +37,8 @@ namespace Magazyn_narzedziowy
                         break;
 
                     case '3':
-                        //Tools tool = new Tools();
-                        //tool = toolManager.ShowToolDetail();
 
-                        var tool=toolManager.ShowToolDetail();
+                        var tool = toolManager.ShowToolDetail();
                         Console.WriteLine($"Tool id:{tool.Id}");
                         Console.WriteLine($"Tool name:{tool.Name}");
                         Console.WriteLine($"Tool type:{tool.TypeId}");

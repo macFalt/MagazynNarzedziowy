@@ -1,4 +1,5 @@
-﻿using MagazynNarzedziowy.App.Common;
+﻿using MagazynNarzedziowy.App.Abstract;
+using MagazynNarzedziowy.App.Common;
 using MagazynNarzedziowy.App.Concrete;
 using MagazynNarzedziowy.Domain.Entity;
 using System;
@@ -10,6 +11,7 @@ namespace MagazynNarzedziowy.App.Managers
 
     public class ToolManager : ToolService
     {
+        //private IService<Tools> _toolService;
         private ToolService _toolService;
         private MenuActionServise _actionService;
 
@@ -20,6 +22,8 @@ namespace MagazynNarzedziowy.App.Managers
 
         public ToolManager(MenuActionServise actionService)
         {
+            //_toolService = toolService;
+
             _toolService = new ToolService();
             _actionService = actionService;
         }
@@ -75,7 +79,6 @@ namespace MagazynNarzedziowy.App.Managers
             var toolDetail = _toolService.GetAllObjects();
             for (int i = 0; i < toolDetail.Count; i++)
                 Console.WriteLine($"{toolDetail[i].Id}.{toolDetail[i].Name}");
-            //_toolService.GetObjectById(id);
             return _toolService.GetObjectById(id);
 
 

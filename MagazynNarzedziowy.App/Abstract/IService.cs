@@ -16,6 +16,7 @@ namespace MagazynNarzedziowy.App.Abstract
 
         void RemoveObject(T objects);
 
+        public T GetObjectById(int id);
 
     }
 }
