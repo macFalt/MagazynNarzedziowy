@@ -10,19 +10,19 @@ namespace MagazynNarzedziowy.App.Common
     public class BaseService<T> : IService<T> where T : BaseEntity
     {
 
-        public List<T> Tools { get; set ; }
+        public List<T> Objects { get; set ; }
 
         public BaseService()
         {
-            Tools = new List<T>();
+            Objects = new List<T>();
         }
 
         public int GetLastId()
         {
             int lastId;
-            if(Tools.Any())
+            if(Objects.Any())
             {
-                lastId = Tools.OrderBy(p => p.Id).LastOrDefault().Id;
+                lastId = Objects.OrderBy(p => p.Id).LastOrDefault().Id;
 
             }
             else
@@ -33,36 +33,36 @@ namespace MagazynNarzedziowy.App.Common
         }
 
 
-        public int AddObject(T tool)
+        public int AddObject(T objects)
         {
-            Tools.Add(tool);
-            return tool.Id;
+            Objects.Add(objects);
+            return objects.Id;
 
         }
 
-        public List<T> GetAllObject()
+        public List<T> GetAllObjects()
         {
-            return Tools;
+            return Objects;
         }
 
-        public void RemoveObject(T tool)
+        public void RemoveObject(T objects)
         {
-            Tools.Remove(tool);
+            Objects.Remove(objects);
         }
 
-        public int UpdateObject(T tool)
+        public int UpdateObject(T objects)
         {
-            var entity = Tools.FirstOrDefault(p => p.Id == tool.Id); 
+            var entity = Objects.FirstOrDefault(p => p.Id == objects.Id); 
             if(entity!=null)
             {
-                entity = tool;
+                entity = objects;
             }
             return entity.Id;
         }
 
         public T GetObjectById(int id)
         {
-            var entity = Tools.FirstOrDefault(p => p.Id == id);
+            var entity = Objects.FirstOrDefault(p => p.Id == id);
             return entity;
         }
     }

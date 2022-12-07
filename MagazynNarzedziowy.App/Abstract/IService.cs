@@ -6,15 +6,15 @@ namespace MagazynNarzedziowy.App.Abstract
 {
     public interface IService<T>
     {
-        List<T> Tools { get; set; }
+        List<T> Objects { get; set; }
 
-        List<T> GetAllObject();
+        List<T> GetAllObjects();
 
-        int AddObject(T tool);
+        int AddObject(T objects);
 
-        int UpdateObject(T tool);
+        int UpdateObject(T objects);
 
-        void RemoveObject(T tool);
+        void RemoveObject(T objects);
 
 
     }

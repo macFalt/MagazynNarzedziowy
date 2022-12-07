@@ -16,7 +16,7 @@ namespace MagazynNarzedziowy.App.Concrete
         public List<MenuAction> ShowMenu(string menuName)
         {
             List<MenuAction> result = new List<MenuAction>();
-            foreach (var menuAction in Tools)
+            foreach (var menuAction in Objects)
             {
                 if(menuAction.MenuName==menuName)
                 {

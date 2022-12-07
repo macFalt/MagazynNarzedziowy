@@ -36,14 +36,19 @@ namespace Magazyn_narzedziowy
                         var removeId = toolManager.RemoveTool();
                         break;
 
-                    //case '3':
-                    //    var showDetails = toolManager.ShowDetailsView();
-                    //    toolManager.ShowDetails(showDetails);
-                    //    break;
+                    case '3':
+                        //Tools tool = new Tools();
+                        //tool = toolManager.ShowToolDetail();
+
+                        var tool=toolManager.ShowToolDetail();
+                        Console.WriteLine($"Tool id:{tool.Id}");
+                        Console.WriteLine($"Tool name:{tool.Name}");
+                        Console.WriteLine($"Tool type:{tool.TypeId}");
+
+                        break;
 
                     case '4':
                         List<Tools> xxx = new List<Tools>();
-
                         xxx = toolManager.ShowToolList();
                         for (int i = 0; i < xxx.Count; i++)
                             Console.WriteLine($"{xxx[i].Id}.{xxx[i].Name}");
