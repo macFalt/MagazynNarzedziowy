@@ -9,22 +9,16 @@ using System.Text;
 namespace MagazynNarzedziowy.App.Managers
 {
 
-    public class ToolManager : ToolService
+    public class ToolManager : BaseService<Tools>
     {
-        //private IService<Tools> _toolService;
-        private ToolService _toolService;
+
+        private IService<Tools> _toolService;
         private MenuActionServise _actionService;
 
-        public ToolManager()
+        public ToolManager(MenuActionServise actionService,IService<Tools> toolService)
         {
 
-        }
-
-        public ToolManager(MenuActionServise actionService)
-        {
-            //_toolService = toolService;
-
-            _toolService = new ToolService();
+            _toolService = toolService;
             _actionService = actionService;
         }
 
@@ -90,16 +84,6 @@ namespace MagazynNarzedziowy.App.Managers
             Console.WriteLine($"Tool type:{tool.TypeId}");
         }
 
-        //public Tools ShowToolDetail(int id)
-        //{
-
-        //    Console.WriteLine("Podaj Id narzedzia do wyswietlenia szczegółów:");
-        //    var idTool = Convert.ToInt32(Console.ReadLine());
-        //    var toolDetail = _toolService.GetAllObjects();
-        //    for (int i = 0; i < toolDetail.Count; i++)
-        //        Console.WriteLine($"{toolDetail[i].Id}.{toolDetail[i].Name}");
-        //    return _toolService.GetObjectById(idTool);
-        //}
 
 
 

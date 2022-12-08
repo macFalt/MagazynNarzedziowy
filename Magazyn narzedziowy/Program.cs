@@ -12,7 +12,8 @@ namespace Magazyn_narzedziowy
         static void Main(string[] args)
         {
             MenuActionServise actionService = new MenuActionServise();
-            ToolManager toolManager = new ToolManager(actionService); 
+            ToolService toolService = new ToolService();
+            ToolManager toolManager = new ToolManager(actionService,toolService); 
 
 
             Console.WriteLine("Witaj w bazie narzedzi");
@@ -38,19 +39,12 @@ namespace Magazyn_narzedziowy
 
                     case '3':
                         toolManager.ShowToolDetail();
-                        //var tool = toolManager.ShowToolDetail();
-                        //Console.WriteLine($"Tool id:{tool.Id}");
-                        //Console.WriteLine($"Tool name:{tool.Name}");
-                        //Console.WriteLine($"Tool type:{tool.TypeId}");
-
                         break;
 
                     case '4':
-                        //List<Tools> xxx = new List<Tools>();
+                  
                         toolManager.ShowToolList();
-                        //for (int i = 0; i < xxx.Count; i++)
-                        //    Console.WriteLine($"{xxx[i].Id}.{xxx[i].Name}");
-
+                      
                         break;
 
 

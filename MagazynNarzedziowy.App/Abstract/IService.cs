@@ -18,5 +18,7 @@ namespace MagazynNarzedziowy.App.Abstract
 
         public T GetObjectById(int id);
 
+
+        int GetLastId();
     }
 }

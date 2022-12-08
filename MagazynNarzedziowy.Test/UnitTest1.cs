@@ -26,11 +26,12 @@ public class UnitTest1
         var mock = new Mock<IService<Tools>>();
         mock.Setup(s => s.GetObjectById(1)).Returns(tool);
 
-        var manager = new ToolManager();
-        manager.AddNewTools(tool);
-        
+        //var manager = new ToolManager(new MenuActionServise(), mock.Object);
+
+        ToolManager manager = new ToolManager(new MenuActionServise(), mock.Object);
         //Act
         var returnedId = manager.GetObjectById(tool.Id);
+
         //Assert
         Assert.Equal(tool, returnedId);
     }
