@@ -1,25 +1,23 @@
 ﻿<Properties StartupConfiguration="{491402FA-EE0E-4C44-990A-F873706411CE}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Magazyn narzedziowy/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.Magazyn_220narzedziowy PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MagazynNarzedziowy.Test/UnitTest1.cs">
     <Files>
-      <File FileName="Magazyn narzedziowy/Program.cs" Line="48" Column="30" />
-      <File FileName="MagazynNarzedziowy.App/Managers/ToolManager.cs" />
-      <File FileName="MagazynNarzedziowy.App/Concrete/ToolServise.cs" />
-      <File FileName="MagazynNarzedziowy.App/Common/BaseService.cs" />
-      <File FileName="MagazynNarzedziowy.App/Concrete/MenuActionServise.cs" />
-      <File FileName="MagazynNarzedziowy.Domain/Entity/Tools.cs" />
+      <File FileName="Magazyn narzedziowy/Program.cs" Line="15" Column="13" />
+      <File FileName="MagazynNarzedziowy.App/Managers/ToolManager.cs" Line="84" Column="1" />
+      <File FileName="MagazynNarzedziowy.App/Concrete/ToolServise.cs" Line="19" Column="1" />
+      <File FileName="MagazynNarzedziowy.App/Common/BaseService.cs" Line="67" Column="1" />
+      <File FileName="MagazynNarzedziowy.App/Concrete/MenuActionServise.cs" Line="20" Column="1" />
+      <File FileName="MagazynNarzedziowy.Domain/Entity/Tools.cs" Line="24" Column="1" />
       <File FileName="MagazynNarzedziowy.Domain/Common/BaseEntity.cs" />
-      <File FileName="MagazynNarzedziowy.Domain/Entity/MenuAction.cs" />
-      <File FileName="MagazynNarzedziowy.App/Abstract/IService.cs" />
+      <File FileName="MagazynNarzedziowy.Domain/Entity/MenuAction.cs" Line="15" Column="1" />
+      <File FileName="MagazynNarzedziowy.App/Abstract/IService.cs" Line="19" Column="40" />
+      <File FileName="MagazynNarzedziowy.Test/UnitTest1.cs" Line="33" Column="57" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Magazyn narzedziowy" expanded="True">
-            <Node name="Magazyn narzedziowy" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="Magazyn narzedziowy" expanded="True" />
             <Node name="MagazynNarzedziowy.App" expanded="True">
               <Node name="Abstract" expanded="True" />
               <Node name="Common" expanded="True" />
@@ -30,13 +28,21 @@
               <Node name="Common" expanded="True" />
               <Node name="Entity" expanded="True" />
             </Node>
+            <Node name="MagazynNarzedziowy.Test" expanded="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Magazyn narzedziowy" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Magazyn_220narzedziowy PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.MagazynNarzedziowy.Test FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

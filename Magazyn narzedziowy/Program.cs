@@ -29,27 +29,27 @@ namespace Magazyn_narzedziowy
                 switch (operation.KeyChar)
                 {
                     case '1':
-                        var newId = toolManager.AddNewTool();
+                        toolManager.AddNewTool();
                         break;
 
                     case '2':
-                        var removeId = toolManager.RemoveTool();
+                        toolManager.RemoveTool();
                         break;
 
                     case '3':
-
-                        var tool = toolManager.ShowToolDetail();
-                        Console.WriteLine($"Tool id:{tool.Id}");
-                        Console.WriteLine($"Tool name:{tool.Name}");
-                        Console.WriteLine($"Tool type:{tool.TypeId}");
+                        toolManager.ShowToolDetail();
+                        //var tool = toolManager.ShowToolDetail();
+                        //Console.WriteLine($"Tool id:{tool.Id}");
+                        //Console.WriteLine($"Tool name:{tool.Name}");
+                        //Console.WriteLine($"Tool type:{tool.TypeId}");
 
                         break;
 
                     case '4':
-                        List<Tools> xxx = new List<Tools>();
-                        xxx = toolManager.ShowToolList();
-                        for (int i = 0; i < xxx.Count; i++)
-                            Console.WriteLine($"{xxx[i].Id}.{xxx[i].Name}");
+                        //List<Tools> xxx = new List<Tools>();
+                        toolManager.ShowToolList();
+                        //for (int i = 0; i < xxx.Count; i++)
+                        //    Console.WriteLine($"{xxx[i].Id}.{xxx[i].Name}");
 
                         break;
 

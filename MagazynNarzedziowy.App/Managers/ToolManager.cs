@@ -45,45 +45,61 @@ namespace MagazynNarzedziowy.App.Managers
             Console.WriteLine("Podaj nazwe narzedzia");
             var name = Console.ReadLine();
             int toolId=_toolService.GetLastId();
-            Tools tool = new Tools(toolId+1, name, typeId); 
-            _toolService.AddNewTools(tool);
+            Tools tool = new Tools(toolId+1, name, typeId);
+            _toolService.AddObject(tool);
+            //_toolService.AddNewTools(tool);
             return tool.Id;
         }
 
 
-        public int RemoveTool()
+        public void RemoveTool()
         {
 
             Console.WriteLine("Podaj Id narzedzia do usuniecia");
-            var toolList = _toolService.GetAllObjects();
-            for (int i = 0; i < toolList.Count; i++)
-            Console.WriteLine($"{toolList[i].Id}.{toolList[i].Name}");
+            ShowToolList();
             var id = Convert.ToInt32(Console.ReadLine());
-            _toolService.RemoveItem(id);
-            return id;
+            var toolId =_toolService.GetObjectById(id);
+            _toolService.RemoveObject(toolId);
+          
             
         }
 
 
-        public List<Tools> ShowToolList()
+        public void ShowToolList()
         {
-            return _toolService.GetAllObjects();
+            var tools = _toolService.GetAllObjects();
+            for (int i = 0; i < tools.Count; i++)
+            {
+                Console.WriteLine($"Tool id:{tools[i].Id}");
+                Console.WriteLine($"Tool name:{tools[i].Name}");
+                Console.WriteLine("");
+
+            }
         }
 
-
-        public Tools ShowToolDetail()
+        public void ShowToolDetail()
         {
-
             Console.WriteLine("Podaj Id narzedzia do wyswietlenia szczegółów:");
-            var id = Convert.ToInt32(Console.ReadLine());
             var toolDetail = _toolService.GetAllObjects();
             for (int i = 0; i < toolDetail.Count; i++)
                 Console.WriteLine($"{toolDetail[i].Id}.{toolDetail[i].Name}");
-            return _toolService.GetObjectById(id);
-
-
-
+            var idTool = Convert.ToInt32(Console.ReadLine());
+            var tool= _toolService.GetObjectById(idTool);
+            Console.WriteLine($"Tool id:{tool.Id}");
+            Console.WriteLine($"Tool name:{tool.Name}");
+            Console.WriteLine($"Tool type:{tool.TypeId}");
         }
+
+        //public Tools ShowToolDetail(int id)
+        //{
+
+        //    Console.WriteLine("Podaj Id narzedzia do wyswietlenia szczegółów:");
+        //    var idTool = Convert.ToInt32(Console.ReadLine());
+        //    var toolDetail = _toolService.GetAllObjects();
+        //    for (int i = 0; i < toolDetail.Count; i++)
+        //        Console.WriteLine($"{toolDetail[i].Id}.{toolDetail[i].Name}");
+        //    return _toolService.GetObjectById(idTool);
+        //}
 
 
 

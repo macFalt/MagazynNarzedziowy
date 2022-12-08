@@ -23,8 +23,8 @@ public class UnitTest1
 
         //Arrange
         Tools tool = new Tools(1, "W10", 1);
-        //var mock = new Mock<IService<Tools>>();
-        //mock.Setup(s => s.GetObjectById(1)).Returns(tool);
+        var mock = new Mock<IService<Tools>>();
+        mock.Setup(s => s.GetObjectById(1)).Returns(tool);
 
         var manager = new ToolManager();
         manager.AddNewTools(tool);
