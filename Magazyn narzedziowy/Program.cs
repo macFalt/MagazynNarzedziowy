@@ -4,20 +4,30 @@ using MagazynNarzedziowy.App.Managers;
 using MagazynNarzedziowy.Domain.Entity;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Magazyn_narzedziowy
 {
     class Program
-    {
+    { 
         static void Main(string[] args)
         {
+
+
+            bool x = true;
+            
             MenuActionServise actionService = new MenuActionServise();
             ToolService toolService = new ToolService();
-            ToolManager toolManager = new ToolManager(actionService,toolService); 
+            ListService listService = new ListService();
+            ToolManager toolManager = new ToolManager(actionService,toolService);
+
+            //var lines = File.ReadAllLines(@"/Users/maciejfaltynski/Documents/proba.txt");
+
+
 
 
             Console.WriteLine("Witaj w bazie narzedzi");
-            while (true)
+            while (x)
             {
                 Console.WriteLine("Wybierz co chcesz zrobić:");
                 var mainMenu = actionService.ShowMenu("Main");
@@ -31,6 +41,7 @@ namespace Magazyn_narzedziowy
                 {
                     case '1':
                         toolManager.AddNewTool();
+                        
                         break;
 
                     case '2':
@@ -42,9 +53,21 @@ namespace Magazyn_narzedziowy
                         break;
 
                     case '4':
-                  
                         toolManager.ShowToolList();
-                      
+                        break;
+                    case '5':
+                        Console.WriteLine("Czy chcesz wyjsc z programu?");
+                        Console.WriteLine("T/N");
+                        var value = Console.ReadLine();
+                        char xxx = Convert.ToChar(value);
+                        if (xxx == 'T' || xxx=='t')
+                        {
+
+                            x = false;
+                        }
+                        else
+                            continue;
+                        
                         break;
 
 

@@ -8,4 +8,10 @@
     <ProjectReference Include="..\MagazynNarzedziowy.Domain\MagazynNarzedziowy.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Newtonsoft.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
 </Project>

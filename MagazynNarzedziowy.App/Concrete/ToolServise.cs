@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using MagazynNarzedziowy.Domain.Entity;
+using System.Linq;
 
 namespace MagazynNarzedziowy.App.Concrete
 {
@@ -27,6 +28,33 @@ namespace MagazynNarzedziowy.App.Concrete
         }
 
 
+        //public IEnumerable<Tools> Seed()
+        //{
+        //    List<Tools> tools = new List<Tools>();
+        //    for (int i=0;i<500;i++)
+        //    {
+        //        Tools tool = new Tools()
+        //        {
+        //            Id = i,
+        //            Name = i.ToString(),
+        //            TypeId = i * 12
+        //        };
+        //        tools.Add(tool);
+        //    return tools;
+        //}
+
+        //    }
+        //public IQueryable<Tools> GetAllToolsQueryable()
+        //{
+        //    IQueryable<Tools> tools = Seed().AsQueryable();
+        //    return tools;
+        //}
+
+        //public IEnumerable<Tools> GetAllToolsEnumerable()
+        //{
+        //    IEnumerable<Tools> tools = Seed();
+        //    return tools;
+        //}
 
 
     }

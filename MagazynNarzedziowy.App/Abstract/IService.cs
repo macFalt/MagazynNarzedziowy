@@ -18,7 +18,10 @@ namespace MagazynNarzedziowy.App.Abstract
 
         public T GetObjectById(int id);
 
-
         int GetLastId();
+
+        void AddObjectsToFile();
+
+        void xxx();
     }
 }

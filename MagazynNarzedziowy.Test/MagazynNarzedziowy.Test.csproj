@@ -20,10 +20,12 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Moq" Version="4.18.3" />
+    <PackageReference Include="FluentAssertions" Version="6.8.0" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Moq" />
+    <None Remove="FluentAssertions" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MagazynNarzedziowy.Domain\MagazynNarzedziowy.Domain.csproj" />

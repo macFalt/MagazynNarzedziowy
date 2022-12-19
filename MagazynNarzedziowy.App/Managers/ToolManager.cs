@@ -9,7 +9,7 @@ using System.Text;
 namespace MagazynNarzedziowy.App.Managers
 {
 
-    public class ToolManager : BaseService<Tools>
+    public class ToolManager 
     {
 
         private IService<Tools> _toolService;
@@ -23,7 +23,7 @@ namespace MagazynNarzedziowy.App.Managers
         }
 
 
-        public int AddNewTool()
+        public void AddNewTool()
         {
             var addNewToolMenu = _actionService.ShowMenu("RodzajNarzedzi");
             Console.WriteLine("Wybierz typ");
@@ -40,9 +40,10 @@ namespace MagazynNarzedziowy.App.Managers
             var name = Console.ReadLine();
             int toolId=_toolService.GetLastId();
             Tools tool = new Tools(toolId+1, name, typeId);
+            _toolService.xxx();
             _toolService.AddObject(tool);
-            //_toolService.AddNewTools(tool);
-            return tool.Id;
+            _toolService.AddObjectsToFile();
+            
         }
 
 
@@ -88,5 +89,17 @@ namespace MagazynNarzedziowy.App.Managers
 
 
 
+        //METODY DO LEKCJI O TESTACH
+        //public Tools ShowDetail(int id)
+        //{
+        //    var tool = _toolService.GetObjectById(id); //metoda do utworzona do testu moq
+        //    return tool;
+        //}
+
+        //public void RemoveToolById(int id)
+        //{
+        //    var tool = _toolService.GetObjectById(id);
+        //    _toolService.RemoveObject(tool);
+        //}
     }
 }

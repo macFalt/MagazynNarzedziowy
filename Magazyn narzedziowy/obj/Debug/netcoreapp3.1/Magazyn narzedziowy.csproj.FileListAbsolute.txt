@@ -36,3 +36,4 @@ C:/Users/macie/OneDrive/Pulpit/szkolaDotNeta/Magazyn narzedziowy/Magazyn narzedz
 /Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/Magazyn narzedziowy/obj/Debug/netcoreapp3.1/Magazyn narzedziowy.dll
 /Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/Magazyn narzedziowy/obj/Debug/netcoreapp3.1/Magazyn narzedziowy.pdb
 /Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/Magazyn narzedziowy/obj/Debug/netcoreapp3.1/Magazyn narzedziowy.genruntimeconfig.cache
+/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/Magazyn narzedziowy/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll

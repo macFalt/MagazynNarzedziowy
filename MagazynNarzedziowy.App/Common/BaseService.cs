@@ -4,11 +4,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
+using System.Reflection.Metadata;
+using System.Xml.Serialization;
+using Newtonsoft.Json;
+using MagazynNarzedziowy.Domain.Entity;
 
 namespace MagazynNarzedziowy.App.Common
 {
     public class BaseService<T> : IService<T> where T : BaseEntity
     {
+
 
         public List<T> Objects { get; set ; }
 
@@ -16,6 +22,10 @@ namespace MagazynNarzedziowy.App.Common
         {
             Objects = new List<T>();
         }
+
+
+         
+        
 
         public int GetLastId()
         {
@@ -65,5 +75,45 @@ namespace MagazynNarzedziowy.App.Common
             var entity = Objects.FirstOrDefault(p => p.Id == id);
             return entity;
         }
+
+        public void xxx()
+        {
+            List<T> tools = new List<T>();
+            var lines = File.ReadAllLines(@"/Users/maciejfaltynski/Documents/proba.json");
+            string json = JsonConvert.SerializeObject(lines);
+            tools = JsonConvert.DeserializeObject<List<T>>(json);
+            foreach (var x in tools)
+            {
+
+                Objects.Add(x);
+
+            }
+        }
+
+        public void AddObjectsToFile()
+        {
+
+            //List<T> tools = new List<T>();
+            //var lines = File.ReadAllLines(@"/Users/maciejfaltynski/Documents/proba.json");
+            //string json = string.Join("", lines);
+            //tools = JsonConvert.DeserializeObject<List<T>>(json);
+            //    foreach (var x in tools)
+            //    {
+
+            //        Objects.Add(x);
+
+            //    }
+            
+
+            string output = JsonConvert.SerializeObject(Objects);
+            using StreamWriter sw = new StreamWriter(@"/Users/maciejfaltynski/Documents/proba.json");
+            using JsonWriter writer = new JsonTextWriter(sw);
+            JsonSerializer serializer = new JsonSerializer();
+            serializer.Serialize(writer, output);
+
+            
+        }
+
+
     }
 }

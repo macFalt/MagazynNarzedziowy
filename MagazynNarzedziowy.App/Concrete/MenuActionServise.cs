@@ -35,6 +35,7 @@ namespace MagazynNarzedziowy.App.Concrete
             AddObject(new MenuAction(2, "Usuń narzedzie", "Main"));
             AddObject(new MenuAction(3, "Pokaż szczegóły po id", "Main"));
             AddObject(new MenuAction(4, "Lista narzedzi", "Main"));
+            AddObject(new MenuAction(5, "Wyjscie z programu", "Main"));
 
             AddObject(new MenuAction(1, "Wiertła", "RodzajNarzedzi"));
             AddObject(new MenuAction(2, "Frezy", "RodzajNarzedzi"));
