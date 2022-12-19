@@ -2,8 +2,10 @@
 using MagazynNarzedziowy.App.Common;
 using MagazynNarzedziowy.App.Concrete;
 using MagazynNarzedziowy.Domain.Entity;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace MagazynNarzedziowy.App.Managers
@@ -40,11 +42,36 @@ namespace MagazynNarzedziowy.App.Managers
             var name = Console.ReadLine();
             int toolId=_toolService.GetLastId();
             Tools tool = new Tools(toolId+1, name, typeId);
-            _toolService.xxx();
             _toolService.AddObject(tool);
             _toolService.AddObjectsToFile();
             
         }
+
+        public int xxx()
+        {
+
+            if (new FileInfo(@"/Users/maciejfaltynski/Documents/proba.json").Length == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                using StreamReader streamReader = new StreamReader(@"/Users/maciejfaltynski/Documents/proba.json");
+                string output = streamReader.ReadToEnd();
+                string output2 = output.Substring(1, (output.Length - 2));
+                string output3 = output2.Replace("\\", "");
+                var tools = JsonConvert.DeserializeObject<List<Tools>>(output3);
+
+                foreach (var x in tools)
+                {
+                    _toolService.AddObject(x);
+                }
+
+            }
+            return 1;
+        }
+
+
 
 
         public void RemoveTool()

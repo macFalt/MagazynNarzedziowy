@@ -15,6 +15,21 @@ namespace MagazynNarzedziowy.App.Concrete
 {
     public class ListService : BaseService<Tools>
     {
+
+
+        //public void xxx()
+        //{
+        //    List<Tools> tools = new List<Tools>();
+        //    var lines = File.ReadAllLines(@"/Users/maciejfaltynski/Documents/proba.json");
+        //    var json = JsonConvert.SerializeObject(lines);
+        //    tools = JsonConvert.DeserializeObject<List<Tools>>(json);
+        //    foreach (var x in tools)
+        //    {
+
+        //        Objects.Add(x);
+        //    }
+
+        //}
         //public ListService()
         //{
         //    //List<Tools> tools = new List<Tools>();
@@ -25,7 +40,7 @@ namespace MagazynNarzedziowy.App.Concrete
         //        {
         //            Objects.Add(x);
         //        }
-            
+
 
 
         //}

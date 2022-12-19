@@ -1,4 +1,5 @@
 ﻿using MagazynNarzedziowy.App.Abstract;
+using MagazynNarzedziowy.App.Common;
 using MagazynNarzedziowy.App.Concrete;
 using MagazynNarzedziowy.App.Managers;
 using MagazynNarzedziowy.Domain.Entity;
@@ -12,14 +13,19 @@ namespace Magazyn_narzedziowy
     { 
         static void Main(string[] args)
         {
+            FileInfo fileInfo = new FileInfo(@"/Users/maciejfaltynski/Documents/proba.json");
 
-
+            if(!fileInfo.Exists)
+            {
+                using (FileStream fs = File.Create(@"/Users/maciejfaltynski/Documents/proba.json"));
+            }
+        
             bool x = true;
-            
             MenuActionServise actionService = new MenuActionServise();
             ToolService toolService = new ToolService();
-            ListService listService = new ListService();
             ToolManager toolManager = new ToolManager(actionService,toolService);
+            
+            toolManager.xxx();
 
             //var lines = File.ReadAllLines(@"/Users/maciejfaltynski/Documents/proba.txt");
 

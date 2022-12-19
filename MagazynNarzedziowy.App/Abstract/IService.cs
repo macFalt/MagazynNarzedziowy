@@ -22,6 +22,6 @@ namespace MagazynNarzedziowy.App.Abstract
 
         void AddObjectsToFile();
 
-        void xxx();
+       // void xxx();
     }
 }
