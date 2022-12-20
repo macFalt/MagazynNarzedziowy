@@ -20,7 +20,7 @@ namespace MagazynNarzedziowy.App.Abstract
 
         int GetLastId();
 
-        //void AddObjectsToFile();
+        void UpdateFile(string path);
 
        // void xxx();
     }

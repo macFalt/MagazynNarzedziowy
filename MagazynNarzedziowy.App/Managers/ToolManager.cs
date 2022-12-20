@@ -13,12 +13,12 @@ namespace MagazynNarzedziowy.App.Managers
 
     public class ToolManager 
     {
-
-        //private IService<Tools> _toolService;
-        private ToolService _toolService;
+        string path= @"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json";
+        private IService<Tools> _toolService;
+        //private ToolService _toolService;
         private MenuActionServise _actionService;
 
-        public ToolManager(MenuActionServise actionService,ToolService toolService)
+        public ToolManager(MenuActionServise actionService, IService<Tools> toolService)
         {
 
             _toolService = toolService;
@@ -44,20 +44,20 @@ namespace MagazynNarzedziowy.App.Managers
             int toolId=_toolService.GetLastId();
             Tools tool = new Tools(toolId+1, name, typeId);
             _toolService.AddObject(tool);
-            _toolService.UpdateFile();
+            _toolService.UpdateFile(path);
             
         }
 
         public int UpdateToolList()
         {
 
-            if (new FileInfo(@"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json").Length == 0)
+            if (new FileInfo(path).Length == 0)
             {
                 return 0;
             }
             else
             {
-                using StreamReader streamReader = new StreamReader(@"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json");
+                using StreamReader streamReader = new StreamReader(path);
                 string output = streamReader.ReadToEnd();
                 string output2 = output.Substring(1, (output.Length - 2));
                 string output3 = output2.Replace("\\", "");
@@ -81,7 +81,7 @@ namespace MagazynNarzedziowy.App.Managers
             var id = Convert.ToInt32(Console.ReadLine());
             var toolId =_toolService.GetObjectById(id);
             _toolService.RemoveObject(toolId);
-            _toolService.UpdateFile();
+            _toolService.UpdateFile(path);
           
             
         }

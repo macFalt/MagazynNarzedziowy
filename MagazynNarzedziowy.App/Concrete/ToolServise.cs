@@ -12,14 +12,14 @@ namespace MagazynNarzedziowy.App.Concrete
     public class ToolService : BaseService<Tools>
     {
  
-        public void UpdateFile()
-        {
-            string output = JsonConvert.SerializeObject(Objects);
-            using StreamWriter sw = new StreamWriter(@"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json");
-            using JsonWriter writer = new JsonTextWriter(sw);
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.Serialize(writer, output);
-        }
+        //public void UpdateFile()
+        //{
+        //    string output = JsonConvert.SerializeObject(Objects);
+        //    using StreamWriter sw = new StreamWriter(@"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json");
+        //    using JsonWriter writer = new JsonTextWriter(sw);
+        //    JsonSerializer serializer = new JsonSerializer();
+        //    serializer.Serialize(writer, output);
+        //}
 
 
 
