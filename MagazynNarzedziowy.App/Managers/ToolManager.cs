@@ -15,14 +15,16 @@ namespace MagazynNarzedziowy.App.Managers
     {
         string path= @"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json";
         private IService<Tools> _toolService;
-        //private ToolService _toolService;
         private MenuActionServise _actionService;
+        private FileService _fileService;
+      
 
-        public ToolManager(MenuActionServise actionService, IService<Tools> toolService)
+        public ToolManager(MenuActionServise actionService, IService<Tools> toolService, FileService fileService)
         {
 
             _toolService = toolService;
             _actionService = actionService;
+            _fileService = fileService;
         }
 
 
@@ -44,7 +46,8 @@ namespace MagazynNarzedziowy.App.Managers
             int toolId=_toolService.GetLastId();
             Tools tool = new Tools(toolId+1, name, typeId);
             _toolService.AddObject(tool);
-            _toolService.UpdateFile(path);
+            var tools = _toolService.GetAllObjects();
+            _fileService.UpdateFile(path,tools);
             
         }
 
@@ -81,7 +84,8 @@ namespace MagazynNarzedziowy.App.Managers
             var id = Convert.ToInt32(Console.ReadLine());
             var toolId =_toolService.GetObjectById(id);
             _toolService.RemoveObject(toolId);
-            _toolService.UpdateFile(path);
+            var tools = _toolService.GetAllObjects();
+            _fileService.UpdateFile(path,tools);
           
             
         }

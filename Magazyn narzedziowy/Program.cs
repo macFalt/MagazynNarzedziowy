@@ -23,7 +23,8 @@ namespace Magazyn_narzedziowy
             bool x = true;
             MenuActionServise actionService = new MenuActionServise();
             ToolService toolService = new ToolService();
-            ToolManager toolManager = new ToolManager(actionService,toolService);
+            FileService fileService = new FileService();
+            ToolManager toolManager = new ToolManager(actionService,toolService,fileService);
             
             toolManager.UpdateToolList();
 

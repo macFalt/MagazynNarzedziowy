@@ -13,37 +13,18 @@ using MagazynNarzedziowy.App.Common;
 
 namespace MagazynNarzedziowy.App.Concrete
 {
-    public class ListService : BaseService<Tools>
+    public class FileService : BaseService<Tools>
     {
+        public void UpdateFile(string path, List<Tools> list)
+        {
+            
+            string output = JsonConvert.SerializeObject(list);
+            using StreamWriter sw = new StreamWriter(path);
+            using JsonWriter writer = new JsonTextWriter(sw);
+            JsonSerializer serializer = new JsonSerializer();
+            serializer.Serialize(writer, output);
+        }
 
-
-        //public void xxx()
-        //{
-        //    List<Tools> tools = new List<Tools>();
-        //    var lines = File.ReadAllLines(@"/Users/maciejfaltynski/Documents/proba.json");
-        //    var json = JsonConvert.SerializeObject(lines);
-        //    tools = JsonConvert.DeserializeObject<List<Tools>>(json);
-        //    foreach (var x in tools)
-        //    {
-
-        //        Objects.Add(x);
-        //    }
-
-        //}
-        //public ListService()
-        //{
-        //    //List<Tools> tools = new List<Tools>();
-        //    var lines = File.ReadAllLines(@"/Users/maciejfaltynski/Documents/proba.json");
-        //    string json = string.Join("", lines);
-        //    var tools = JsonConvert.DeserializeObject<List<Tools>>(json);
-        //        foreach (var x in tools)
-        //        {
-        //            Objects.Add(x);
-        //        }
-
-
-
-        //}
     }
 }
         

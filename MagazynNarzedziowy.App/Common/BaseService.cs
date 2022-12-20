@@ -76,14 +76,7 @@ namespace MagazynNarzedziowy.App.Common
             return entity;
         }
 
-        public void UpdateFile(string path)
-        {
-            string output = JsonConvert.SerializeObject(Objects);
-            using StreamWriter sw = new StreamWriter(path);
-            using JsonWriter writer = new JsonTextWriter(sw);
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.Serialize(writer, output);
-        }
+
 
 
     }
