@@ -14,10 +14,11 @@ namespace MagazynNarzedziowy.App.Managers
     public class ToolManager 
     {
 
-        private IService<Tools> _toolService;
+        //private IService<Tools> _toolService;
+        private ToolService _toolService;
         private MenuActionServise _actionService;
 
-        public ToolManager(MenuActionServise actionService,IService<Tools> toolService)
+        public ToolManager(MenuActionServise actionService,ToolService toolService)
         {
 
             _toolService = toolService;
@@ -43,20 +44,20 @@ namespace MagazynNarzedziowy.App.Managers
             int toolId=_toolService.GetLastId();
             Tools tool = new Tools(toolId+1, name, typeId);
             _toolService.AddObject(tool);
-            _toolService.AddObjectsToFile();
+            _toolService.UpdateFile();
             
         }
 
-        public int xxx()
+        public int UpdateToolList()
         {
 
-            if (new FileInfo(@"/Users/maciejfaltynski/Documents/proba.json").Length == 0)
+            if (new FileInfo(@"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json").Length == 0)
             {
                 return 0;
             }
             else
             {
-                using StreamReader streamReader = new StreamReader(@"/Users/maciejfaltynski/Documents/proba.json");
+                using StreamReader streamReader = new StreamReader(@"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json");
                 string output = streamReader.ReadToEnd();
                 string output2 = output.Substring(1, (output.Length - 2));
                 string output3 = output2.Replace("\\", "");
@@ -72,8 +73,6 @@ namespace MagazynNarzedziowy.App.Managers
         }
 
 
-
-
         public void RemoveTool()
         {
 
@@ -82,6 +81,7 @@ namespace MagazynNarzedziowy.App.Managers
             var id = Convert.ToInt32(Console.ReadLine());
             var toolId =_toolService.GetObjectById(id);
             _toolService.RemoveObject(toolId);
+            _toolService.UpdateFile();
           
             
         }

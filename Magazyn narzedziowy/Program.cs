@@ -13,11 +13,11 @@ namespace Magazyn_narzedziowy
     { 
         static void Main(string[] args)
         {
-            FileInfo fileInfo = new FileInfo(@"/Users/maciejfaltynski/Documents/proba.json");
+            FileInfo fileInfo = new FileInfo(@"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json");
 
             if(!fileInfo.Exists)
             {
-                using (FileStream fs = File.Create(@"/Users/maciejfaltynski/Documents/proba.json"));
+                using (FileStream fs = File.Create(@"/Users/maciejfaltynski/Documents/Visual Studio/Magazyn narzedziowy/proba.json"));
             }
         
             bool x = true;
@@ -25,12 +25,7 @@ namespace Magazyn_narzedziowy
             ToolService toolService = new ToolService();
             ToolManager toolManager = new ToolManager(actionService,toolService);
             
-            toolManager.xxx();
-
-            //var lines = File.ReadAllLines(@"/Users/maciejfaltynski/Documents/proba.txt");
-
-
-
+            toolManager.UpdateToolList();
 
             Console.WriteLine("Witaj w bazie narzedzi");
             while (x)

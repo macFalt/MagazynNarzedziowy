@@ -76,14 +76,14 @@ namespace MagazynNarzedziowy.App.Common
             return entity;
         }
 
-        public void AddObjectsToFile()
-        {
-            string output = JsonConvert.SerializeObject(Objects);
-            using StreamWriter sw = new StreamWriter(@"/Users/maciejfaltynski/Documents/proba.json");
-            using JsonWriter writer = new JsonTextWriter(sw);
-            JsonSerializer serializer = new JsonSerializer();
-            serializer.Serialize(writer, output);   
-        }
+        //public void AddObjectsToFile()
+        //{
+        //    string output = JsonConvert.SerializeObject(Objects);
+        //    using StreamWriter sw = new StreamWriter(@"/Users/maciejfaltynski/Documents/proba.json");
+        //    using JsonWriter writer = new JsonTextWriter(sw);
+        //    JsonSerializer serializer = new JsonSerializer();
+        //    serializer.Serialize(writer, output);   
+        //}
 
 
     }
